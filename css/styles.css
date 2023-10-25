@@ -862,7 +862,7 @@ button {
 .form-accept-wrap {
   font-size: 12px;
   font-weight: 400;
-  line-height: 1.33;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   margin: 0;
 }
@@ -883,11 +883,15 @@ button {
   margin-right: 8px;
   cursor: pointer;
   fill: transparent;
+
+  transition: background-color var(--transition), border var(--transition),
+    fill var(--transition);
 }
 
 .form-accept-input:checked + .form-accept-wrap .form-accept-checked {
   background-color: var(--link-hover);
-  fill: #fff;
+  fill: #f4f4fd;
+  border: none;
 }
 
 .form-accept-link {
